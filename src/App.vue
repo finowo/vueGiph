@@ -1,16 +1,22 @@
 <template>
-  <div id="app">
-    ass butt
-  </div>
+  <b-container id="app">
+    <b-row>
+      <b-col>
+        <GiphyViewer />
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
+import GiphyViewer from "@/components/GiphyViewer.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-  }
-}
+    GiphyViewer,
+  },
+};
 </script>
 
 <style>
@@ -19,7 +25,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
+      
